@@ -1,0 +1,36 @@
+.login-box {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+input, select, textarea {
+  display: block;
+  margin: 5px 0;
+  width: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.oculto {
+  display: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Incidencias</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<h2>Lista de Incidencias</h2>
+
+<button id="btnMostrarForm">Registrar incidencia</button>
+
+<div id="formulario" class="oculto">
+  <h3>Nueva Incidencia</h3>
+
+  <input type="text" id="titulo" placeholder="Título del problema">
+  <textarea id="descripcion" placeholder="Descripción del problema"></textarea>
+
+  <input type="date" id="fecha">
+
+  <select id="categoria">
+    <option>Software</option>
+    <option>Hardware</option>
+    <option>Red</option>
+    <option>Otros</option>
+  </select>
+
+  <select id="prioridad">
+    <option>Alta</option>
+    <option>Media</option>
+    <option>Baja</option>
+  </select>
+
+  <select id="estado">
+    <option>Abierta</option>
+    <option>En proceso</option>
+    <option>Cerrada</option>
+  </select>
+
+  <input type="text" id="asignado" placeholder="Técnico asignado">
+
+  <button id="guardar">Guardar</button>
+  <button id="cancelar">Cancelar</button>
+</div>
+
+<hr>
+
+<label>Prioridad:</label>
+<select id="filtroPrioridad">
+  <option value="">Todas</option>
+  <option>Alta</option>
+  <option>Media</option>
+  <option>Baja</option>
+</select>
+
+<label>Estado:</label>
+<select id="filtroEstado">
+  <option value="">Todos</option>
+  <option>Abierta</option>
+  <option>En proceso</option>
+  <option>Cerrada</option>
+</select>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Asignado</th>
+      <th>Fecha</th>
+      <th>Categoría</th>
+      <th>Prioridad</th>
+      <th>Estado</th>
+      <th>Ver</th>
+    </tr>
+  </thead>
+  <tbody id="tablaIncidencias"></tbody>
+</table>
+
+<script src="js/app.js"></script>
+</body>
+</html>
